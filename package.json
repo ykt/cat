@@ -1,0 +1,30 @@
+{
+  "name": "get-scrapper",
+  "version": "0.0.1",
+  "author": "Yasir Khalid",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-mocha-test": "latest",
+    "chai": "latest",
+    "nock": "~0.27.2"
+  },
+  "description": "This is light GET scrapper.",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ykt/cat"
+  },
+  "keywords": [
+    "scapper",
+    "node"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ykt/cat/issues"
+  },
+  "homepage": "https://github.com/ykt/cat"
+}
