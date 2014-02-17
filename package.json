@@ -1,13 +1,13 @@
 {
   "name": "get-scrapper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Yasir Khalid",
   "dependencies": {},
   "devDependencies": {
     "grunt": "latest",
     "grunt-mocha-test": "latest",
     "chai": "latest",
-    "nock": "~0.27.2"
+    "nock": "latest"
   },
   "description": "This is light GET scrapper.",
   "main": "main.js",

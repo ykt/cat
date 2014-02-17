@@ -34,11 +34,12 @@ function Cat () {
 				res.on("end", function() {
 
 					allData += data;
-					if (!self.hasNext(data)) {
-						self.emit('success', allData);
+					if (self.hasNext(data)) {
+						_batchFetch();
+						return;
 					}
 
-					_batchFetch();
+					self.emit('success', allData);
 					
 				});
 

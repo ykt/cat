@@ -8,7 +8,7 @@
 
 
 
-  describe("Cat", function(){
+  describe("Get Scrapper", function(){
 
     before(function() {
       var scope = nock('http://yes')
@@ -18,27 +18,21 @@
                 .get("/2")
                 .reply(200, "data_2")
                 .get("/3")
-                .reply(200, "");
+                .reply(200, " nope");
     });
-
-
-    it("show throw error required function", function(){
-      var scrap = new Scrap();
-
-    });
-
 
     it("should be able to handle data and next", function(){
       var scrap = new Scrap()
       var counter = 1;
 
       scrap.on("success", function(data){
-        assert.equal(data, "data_1 data_2");
+        assert.equal(data, "data_1 data_2 nope");
       });
 
       scrap
       .setUrl("http://yes/" + counter)
       .hasNext(function(data) {
+
         if (data.indexOf("data") < 0) {
           return false;
         }

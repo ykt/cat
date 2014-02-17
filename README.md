@@ -1,6 +1,8 @@
 get-scrapper
 ===
 
+[![Build Status](https://travis-ci.org/ykt/get-scrapper.png?branch=master)](https://travis-ci.org/ykt/get-scrapper)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 About
 -----
